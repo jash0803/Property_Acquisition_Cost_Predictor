@@ -2,7 +2,7 @@
 
 I took the dataset from Kaggle: https://www.kaggle.com/datasets/yasserh/housing-prices-dataset/data
 
-Concepts I have used : 
+Highlights of this project: 
 1. Feature Engineering <br />
    a. Ordinal Encoding <br />
    b. Label Encoding <br />
@@ -10,12 +10,12 @@ Concepts I have used :
 2. Feature Scaling <br />
    a. Standard Scaling <br />
 
-3. Machine Learning Model <br />
+3. Model Training <br />
    a. Linear Regression <br />
    b. Randome Forest Regressor <br />
    c. XGBoost Regressor <br /> 
 
-4. Regression Metrix <br />
+4. Model Evaluation <br />
    a. R-squared error(R2) <br /> 
    b. Mean Squared Error(MSE) <br />
 
