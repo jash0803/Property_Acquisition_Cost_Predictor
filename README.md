@@ -12,13 +12,22 @@ Highlights of this project:
 
 3. Model Training <br />
    a. Linear Regression <br />
-   b. Randome Forest Regressor <br />
+   b. Random Forest Regressor <br />
    c. XGBoost Regressor <br /> 
 
 4. Model Evaluation <br />
    a. R-squared error(R2) <br /> 
    b. Mean Squared Error(MSE) <br />
 
+5. Model Deployment <br />
+   a. Pickle library for saving the model <br />
+   b. Streamlit Framework for creating web-app <br />
 
-Output from VSCODE:
-![house_prediction](https://github.com/jash0803/House_Price_Prediction/assets/105346233/085ae5f4-6a9f-45a8-b2d4-0dd4426bbfd2)
+6. Snapshots of Web-App <br />
+   ![HOUSE_PREDICTION_WEB_APP_SS_page-0001](https://github.com/jash0803/House_Price_Prediction/assets/105346233/50febddd-f8bb-4bff-ac94-236629a3d3cc) <br />
+
+
+
+
+   
+
