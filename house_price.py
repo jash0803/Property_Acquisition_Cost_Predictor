@@ -1,9 +1,7 @@
-
 import streamlit
 import pickle
 import pandas as pd
 import numpy as np
-#EXPORATORY DATA ANALYSIS(EDA)
 import seaborn as sns
 import matplotlib.pyplot as plt
 
@@ -22,6 +20,7 @@ from sklearn import metrics
 
 dataframe = pd.read_csv('E:\Machine Learning\HOUSE_PRICE_PREDICTION\Housing.csv')
 
+#EXPORATORY DATA ANALYSIS(EDA)
 # printing first 5 columns
 print(dataframe.head())
 
@@ -96,12 +95,38 @@ score_model3_2 = metrics.mean_absolute_error(train_y, predict_y_model3)
 print('Mean Absolute Error for XGBOOST: ', score_model3_2)
 
 
-## Data to predict on
-data_to_predict = [[7420, 4, 2, 3, 1, 0, 0, 0, 1, 2, 1, 0]]
+# Data to predict on
+# 13300000	7420	4	2	3	yes	no	no	no	yes	2	yes	furnished
+# 1750000	3850	3	1	2	yes	no	no	no	no	0	no	unfurnished
 
-prediction1 = model1.predict(data_to_predict)
+
+
+input_data = (3850, 3, 1, 2, 1, 0, 0, 0, 0, 0, 0, 0)
+
+#changing input data as numpy array
+input_data_numpy = np.asarray(input_data)
+
+#reshaping the array because if we don't the model thinks we will provide 543 data but we are provided only 1 and so we need to reshape for one instance.
+input_data_numpy_reshape = input_data_numpy.reshape(1,-1)
+
+#standardise the input data
+std_data  = scalar.transform(input_data_numpy_reshape)
+
+prediction1 = model1.predict(std_data)
 print("Using Linear Regression prediction is : ", prediction1)
-prediction2 = model2.predict(data_to_predict)
-print("Using Random Forest Regressor prediction is : ", prediction2)
-prediction3 = model3.predict(data_to_predict)
+
+prediction2 = model2.predict(std_data)
+print("Using Random Forest Regresoor prediction is : ", prediction2)
+
+prediction3 = model3.predict(std_data)
 print("Using XGBoost prediction is : ", prediction3)
+
+
+#Saving the file using Pickle
+
+filename = 'house_price_prediction.sav'
+pickle.dump(model2,open(filename,'wb'))
+loaded_model = pickle.load(open('house_price_prediction.sav','rb'))
+
+prediction = loaded_model.predict(std_data)
+
