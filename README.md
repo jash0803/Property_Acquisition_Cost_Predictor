@@ -25,7 +25,9 @@ Highlights of this project: <br />
    b. Streamlit Framework for creating web-app <br />
 
 7. Snapshots of Web-App <br />
-   ![HOUSE_PREDICTION_WEB_APP_SS_page-0001](https://github.com/jash0803/House_Price_Prediction/assets/105346233/50febddd-f8bb-4bff-ac94-236629a3d3cc) <br />
+   ![webapp1_page-0001](https://github.com/jash0803/Property_Acquisition_Cost_Predictor/assets/105346233/6fac477f-3a8a-4f04-9591-fdb24e277cd9) <br />
+   ![webapp2_page-0001](https://github.com/jash0803/Property_Acquisition_Cost_Predictor/assets/105346233/9ea9dd31-fb4f-45ef-a7f8-5eecb6dedcda)
+
 
 
 
