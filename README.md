@@ -1,4 +1,4 @@
-# house_price_prediction
+# Property Acquisition Cost Predictor
 
 I took the dataset from Kaggle: https://www.kaggle.com/datasets/yasserh/housing-prices-dataset/data
 
